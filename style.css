@@ -1,0 +1,770 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: sans-serif;
+}
+body {
+  position: relative;
+}
+.hotline {
+  position: fixed;
+  bottom: 5%;
+  z-index: 10;
+  width: 100px;
+  padding: 10px;
+  box-shadow: 0 5px 4px 0 rgb(0 0 0 / 26%);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  right: 2%;
+  border-radius: 34px 8px 34px 34px;
+  background-color: rgba(21, 66, 21, 0.9);
+}
+
+.header {
+  padding-top: 60px;
+  background: url(/images/home-hero-v2.png);
+  height: 650px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.phone {
+  width: 350px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.header h1 {
+  font-size: 50px;
+  width: 500px;
+  text-align: center;
+  color: white;
+}
+.get-div {
+  display: flex;
+  color: black;
+  gap: 1.5em;
+}
+.google-play-div {
+  width: 170px;
+  border-radius: 5px;
+  height: 60px;
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#logo {
+  font-size: 30px;
+}
+.join {
+  margin: 30px 0;
+  width: 450px;
+  text-align: center;
+  color: white;
+}
+.link-div ul {
+  list-style: none;
+  margin-top: 2%;
+  display: flex;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+.link:hover {
+  border-radius: 5px;
+  background: rgba(143, 143, 143, 0.1);
+}
+.sign-div {
+  margin-top: 2%;
+}
+.sign-div a {
+  text-decoration: none;
+}
+.nav-bar {
+  display: flex;
+  width: 93%;
+  z-index: 10;
+  position: fixed;
+  background: transparent;
+  padding: 0 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+.patricia-div {
+  margin-top: 2%;
+}
+.patricia-div img {
+  width: 130px;
+}
+.sign {
+  padding: 10px;
+  background: white;
+  margin-right: 1em;
+  border-radius: 5px;
+  color: rgb(143, 143, 143);
+}
+.create {
+  padding: 10px;
+  background: yellow;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+.checkbox {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+.mother-div {
+  width: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: pink;
+}
+.white-line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  position: relative;
+}
+.white-line::before,
+.white-line::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 3px;
+  background: white;
+}
+.white-line::before {
+  top: -10px;
+}
+.main {
+  width: 100%;
+  height: 700px;
+  padding: 10% 0;
+
+  background: url(/images/c8717415146e5d2de3760ba1a67c9adc.svg);
+}
+.universe {
+  font-size: 50px;
+  width: 540px;
+}
+.universe span {
+  color: rgba(21, 66, 21, 0.9);
+}
+.section {
+  margin-left: 200px;
+}
+.main p {
+  width: 400px;
+  margin: 20px 0;
+  line-height: 27px;
+}
+.plenty-people-div {
+  width: 700px;
+  border-radius: 70px;
+  height: 450px;
+  background-color: aliceblue;
+}
+.plenty-people-div h1 {
+  color: rgba(21, 66, 21, 0.9);
+  font-size: 40px;
+  text-align: center;
+}
+.meet-div {
+  display: flex;
+  margin: 40px 20px 0;
+}
+.arrow-div {
+  width: 2500px;
+}
+.plenty-people-div img {
+  width: 700px;
+  border-radius: 70px;
+}
+.earth-text-section {
+  background-color: rgba(255, 250, 229);
+  display: flex;
+  padding: 40px 0;
+  justify-content: start;
+  align-items: center;
+}
+.imagine-div {
+  margin-left: 5%;
+}
+.clutter {
+  color: rgba(21, 66, 21, 0.9);
+  font-size: 50px;
+  width: 500px;
+}
+.imagine {
+  width: 450px;
+  margin: 40px 0;
+  line-height: 25px;
+  opacity: 0.6;
+}
+.remove-img {
+  width: 450px;
+}
+.started {
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: yellow;
+}
+.started:hover {
+  box-shadow: 0px 0px 4px black;
+}
+.gateway-section {
+  display: flex;
+  position: relative;
+  height: 100%;
+  background-color: rgba(21, 66, 21, 0.9);
+}
+.gateway {
+  font-size: 50px;
+  width: 500px;
+}
+.seam-div {
+  width: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  padding-bottom: 50px;
+  gap: 2em;
+}
+.big-dude-div {
+  width: 50%;
+}
+.big-dude {
+  width: 100%;
+}
+.creating {
+  width: 400px;
+  line-height: 25px;
+}
+.rocket-img {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+}
+.trading-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 80px;
+
+  background: url(/images/c8717415146e5d2de3760ba1a67c9adc.svg);
+}
+.simplified-mother {
+  width: 70%;
+}
+.first-trading {
+  width: 350px;
+  position: relative;
+}
+.simplified {
+  font-size: 50px;
+  width: 350px;
+}
+.wallet-text-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.lifting {
+  margin: 30px 0;
+}
+.wallet-text {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 300px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+}
+
+.simplified span {
+  color: rgba(21, 66, 21, 0.9);
+}
+.trading-img {
+  width: 350px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.twin-img {
+  width: 300px;
+}
+.twin-div {
+  display: flex;
+
+  position: relative;
+}
+.do-more {
+  font-size: 50px;
+}
+.do-more-section {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 6em;
+}
+.do-more-div {
+}
+.with-patricia {
+  width: 500px;
+  opacity: 0.5;
+  line-height: 25px;
+  margin: 30px 0;
+}
+.crypto-text {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 300px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+}
+.btc-img {
+  width: 100px;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+}
+.three-icons-section {
+  display: flex;
+  background: linear-gradient(rgb(222, 245, 242), rgb(222, 245, 242)),
+    url(/images/background.svg);
+  padding: 80px 0;
+}
+.secure-text {
+  font-size: 35px;
+  font-weight: light;
+  font-family: sans-serif;
+}
+#second-icon {
+  padding: 20px 60px;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+.first-icon-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  text-align: center;
+  padding: 20px 60px;
+}
+footer{
+  color: white;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  background-color: rgba(0,97,86,var(--tw-bg-opacity));
+  padding: 2%;
+}
+.footer-logo{
+  margin-bottom: 30px;
+}
+.text-btc-div{
+  display: flex;
+
+}
+.bitcoin{
+  width: 100px;
+  margin-left: 60px;
+}
+.payment{
+  line-height: 20px;
+  font-weight: lighter;
+}
+.certificate{
+margin: 40px 0;
+}
+.visa-img{
+  width: 35px;
+  margin-left: 50px;
+}
+.visa-div{
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+}
+.partner-div{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
+}
+.plenty-div{
+  display: flex;
+  gap: 10em;
+   justify-content: center;
+   align-items: center;
+  padding: 40px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 95%;
+}
+.plenty-div div ul li {
+  list-style: none;
+  line-height: 40px;
+}
+.special-list{
+  font-weight: bolder;
+  font-size: 18px;
+}
+.link-pat{
+  text-decoration: none;
+  color: rgb(15, 139, 56);
+
+}
+.ul{
+  line-height: 5px;
+}
+.common{
+  margin-top: 25px;
+}
+.plat{
+  gap: 5em;
+  border: none;
+}
+.universal{
+
+}
+.universal-div{
+
+}
+@media (max-width: 950px) {
+  .get-div {
+    flex-direction: column;
+  }
+  .checkbox {
+    display: block;
+    position: absolute;
+    right: 0%;
+    margin-right: 2%;
+    z-index: 6;
+    opacity: 0;
+    margin-top: 2%;
+  }
+  .mother-div {
+    display: flex;
+    right: 0%;
+    margin-top: 2%;
+    margin-right: 2%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+  }
+  .link-div {
+    display: none;
+  }
+  .patricia-div {
+    margin-left: 2%;
+    z-index: 2;
+  }
+  .sign-div {
+    display: none;
+  }
+  .nav-bar {
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .checkbox:checked ~ .link-div {
+    display: flex;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 400px;
+    position: absolute;
+    overflow: visible;
+    background: black;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
+    flex-direction: column;
+  }
+  .checkbox:checked ~ .sign-div {
+    display: flex;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 400px;
+    position: absolute;
+    overflow: visible;
+    background: black;
+    align-items: flex-start;
+    justify-content: end;
+    flex-direction: column;
+  }
+  .sign,
+  .create {
+    z-index: 2;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+  .header {
+    padding: 0%;
+  }
+  .class {
+    flex-direction: column;
+    padding-left: 2%;
+    gap: 1em;
+  }
+}
+@media (max-width: 982px) {
+  .header h1 {
+    width: 90%;
+  }
+  .join {
+    width: 90%;
+  }
+  .phone {
+    display: none;
+  }
+  .section {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .get-div {
+    flex-direction: column;
+  }
+}
+@media (max-width: 777px) {
+  .plenty-people-div img {
+    width: 100%;
+    border-radius: 40px;
+  }
+  .plenty-people-div {
+    width: 95%;
+    height: 100%;
+  }
+  .universe {
+    width: 90%;
+    font-size: 40px;
+  }
+  .main p {
+    width: 90%;
+  }
+  .meet-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .meet-div h1 {
+    font-size: 20px;
+  }
+  .meet-div img {
+    display: none;
+  }
+  .arrow-div {
+    width: 90%;
+  }
+  .arrow-img {
+    width: 50%;
+  }
+  .section {
+    margin-left: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1000px) {
+  .earth-text-section {
+    flex-direction: column-reverse;
+  }
+  .imagine-div {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .clutter {
+    width: 90%;
+  }
+  .imagine {
+    width: 90%;
+  }
+  .remove-img {
+    width: 90%;
+  }
+}
+@media (max-width: 813px) {
+  .universal{
+    width: 80% !important;
+  }
+  .creating,
+  .gateway {
+    width: 100%;
+  }
+  .decorated{
+    width: 100px;
+  }
+  .google-play-div {
+    width: 80%;
+    border-radius: 5px;
+    height: 60px;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .google-text{
+    font-size: 15px;
+  }
+  #logo {
+    font-size: 20px;
+  }
+  .three-icons-section {
+    flex-direction: column;
+  }
+  #second-icon {
+    border: none;
+  }
+  .gateway {
+    font-size: 40px;
+  }
+  .seam-div {
+    padding-right: 10%;
+  }
+}
+@media (max-width: 712px) {
+  .rocket-img {
+    width: 150px;
+  }
+  .seam-div {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+  .big-dude-div {
+    display: none;
+  }
+  .trading-img {
+    display: none;
+  }
+  .simplified-mother {
+    width: 100%;
+  }
+  .simplified {
+    width: 100%;
+    font-size: 40px;
+  }
+  .trading-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1175px) {
+  .twin-img {
+    width: 50%;
+  }
+  .do-more-section {
+    display: flex;
+  }
+  .twin-div {
+    width: 50%;
+  }
+}
+@media (max-width: 1120px) {
+  .universal-div{
+    width: 45%;
+  }
+.plenty-div{
+  gap: 1em;
+  flex-wrap: wrap;
+}
+  .do-more-section {
+    flex-direction: column;
+  }
+  .with-patricia {
+    width: 90%;
+  }
+  .do-more {
+    font-size: 40px;
+    width: 90%;
+  }
+  .do-more-div {
+    width: 90%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .crypto-text {
+    width: 80%;
+  }
+  .twin-div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btc-img {
+    width: 70px;
+  }
+}
+@media (max-width: 754px) {
+.bitcoin{
+  display: none;
+}
+.visa-div{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center ;
+  gap: 3em;
+}
+.visa-img{
+  width: 15%;
+  margin-left: 0px;
+}
+.partner-div{
+  flex-direction: column;
+  width: 85%;
+  gap: 2em;
+}
+.footer-logo{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.payment-div{
+padding: 0 20px;
+}
+}
