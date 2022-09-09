@@ -6,6 +6,7 @@
 body {
   position: relative;
 }
+
 .hotline {
   position: fixed;
   bottom: 5%;
@@ -86,17 +87,29 @@ body {
 }
 .sign-div {
   margin-top: 2%;
+  margin-right: 4%;
 }
 .sign-div a {
   text-decoration: none;
 }
+.darling {
+  display: flex;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  transition: all ease-in-out 0.5s;
+  background: rgba(21, 66, 21, 0.9) !important;
+  justify-content: space-between;
+  align-items: center;
+}
 .nav-bar {
   display: flex;
-  width: 93%;
+  width: 100%;
   z-index: 10;
   position: fixed;
   background: transparent;
-  padding: 0 2em;
+  padding: 0px 20px 20px;
+  height: 70px;
   justify-content: space-between;
   align-items: center;
 }
@@ -133,6 +146,7 @@ body {
   background-color: pink;
 }
 .white-line {
+  transition: all ease-in-out 0.5s;
   width: 30px;
   height: 3px;
   background: white;
@@ -326,8 +340,7 @@ body {
   justify-content: space-around;
   padding-top: 6em;
 }
-.do-more-div {
-}
+
 .with-patricia {
   width: 500px;
   opacity: 0.5;
@@ -375,42 +388,41 @@ body {
   text-align: center;
   padding: 20px 60px;
 }
-footer{
+footer {
   color: white;
   --tw-bg-opacity: 1;
   --tw-text-opacity: 1;
-  background-color: rgba(0,97,86,var(--tw-bg-opacity));
+  background-color: rgba(0, 97, 86, var(--tw-bg-opacity));
   padding: 2%;
 }
-.footer-logo{
+.footer-logo {
   margin-bottom: 30px;
 }
-.text-btc-div{
+.text-btc-div {
   display: flex;
-
 }
-.bitcoin{
+.bitcoin {
   width: 100px;
   margin-left: 60px;
 }
-.payment{
+.payment {
   line-height: 20px;
   font-weight: lighter;
 }
-.certificate{
-margin: 40px 0;
+.certificate {
+  margin: 40px 0;
 }
-.visa-img{
+.visa-img {
   width: 35px;
   margin-left: 50px;
 }
-.visa-div{
+.visa-div {
   padding: 10px;
   background-color: white;
   border-radius: 10px;
   display: flex;
 }
-.partner-div{
+.partner-div {
   display: flex;
   width: 90%;
   justify-content: space-between;
@@ -420,11 +432,11 @@ margin: 40px 0;
   background: rgba(0, 0, 0, 0.2);
   margin-bottom: 100px;
 }
-.plenty-div{
+.plenty-div {
   display: flex;
   gap: 10em;
-   justify-content: center;
-   align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 40px 0;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -434,36 +446,34 @@ margin: 40px 0;
   list-style: none;
   line-height: 40px;
 }
-.special-list{
+.special-list {
   font-weight: bolder;
   font-size: 18px;
 }
-.link-pat{
+.link-pat {
   text-decoration: none;
   color: rgb(15, 139, 56);
-
 }
-.ul{
+.ul {
   line-height: 5px;
 }
-.common{
+.common {
   margin-top: 25px;
 }
-.plat{
+.plat {
   gap: 5em;
   border: none;
 }
-.universal{
-
+.universal {
 }
-.universal-div{
-
+.universal-div {
 }
 @media (max-width: 950px) {
   .get-div {
     flex-direction: column;
   }
   .checkbox {
+    transition: all ease-in-out 0.5s;
     display: block;
     position: absolute;
     right: 0%;
@@ -474,6 +484,7 @@ margin: 40px 0;
   }
   .mother-div {
     display: flex;
+
     right: 0%;
     margin-top: 2%;
     margin-right: 2%;
@@ -481,22 +492,40 @@ margin: 40px 0;
     position: absolute;
     z-index: 2;
   }
-  .link-div {
-    display: none;
+  .link-div, .sign-div {
+    width: 100%;
+   height: 0%;
+    overflow: hidden;
   }
+
   .patricia-div {
     margin-left: 2%;
     z-index: 2;
   }
+ 
   .sign-div {
-    display: none;
+    margin-right: 0;
+   
   }
+
   .nav-bar {
     width: 100%;
     padding: 0;
     justify-content: space-between;
   }
+  .checkbox:checked + .mother-div .white-line {
+    transform: rotate(135deg);
+  }
+  .checkbox:checked + .mother-div .white-line::before,
+  .checkbox:checked + .mother-div .white-line::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .checkbox:checked:hover + .mother-div .white-line {
+    transform: rotate(225deg);
+  }
   .checkbox:checked ~ .link-div {
+    transition: all ease .5s;
     display: flex;
     width: 100%;
     top: 0;
@@ -504,13 +533,15 @@ margin: 40px 0;
     height: 400px;
     position: absolute;
     overflow: visible;
-    background: black;
+    background: rgba(21, 66, 21, 1);
     align-items: flex-start;
     justify-content: center;
     z-index: 1;
     flex-direction: column;
   }
+ 
   .checkbox:checked ~ .sign-div {
+    transition: all ease .5s;
     display: flex;
     width: 100%;
     top: 0;
@@ -518,11 +549,12 @@ margin: 40px 0;
     height: 400px;
     position: absolute;
     overflow: visible;
-    background: black;
+    background: rgba(21, 66, 21, 1);
     align-items: flex-start;
     justify-content: end;
     flex-direction: column;
   }
+ 
   .sign,
   .create {
     z-index: 2;
@@ -624,18 +656,19 @@ margin: 40px 0;
   }
 }
 @media (max-width: 813px) {
-  .universal{
+  .universal {
     width: 80% !important;
   }
   .creating,
   .gateway {
     width: 100%;
   }
-  .decorated{
+  .decorated {
     width: 100px;
   }
   .google-play-div {
-    width: 80%;
+    width: 100%;
+    padding: 5px;
     border-radius: 5px;
     height: 60px;
     gap: 1em;
@@ -644,7 +677,7 @@ margin: 40px 0;
     align-items: center;
     background-color: white;
   }
-  .google-text{
+  .google-text {
     font-size: 15px;
   }
   #logo {
@@ -703,13 +736,13 @@ margin: 40px 0;
   }
 }
 @media (max-width: 1120px) {
-  .universal-div{
+  .universal-div {
     width: 45%;
   }
-.plenty-div{
-  gap: 1em;
-  flex-wrap: wrap;
-}
+  .plenty-div {
+    gap: 1em;
+    flex-wrap: wrap;
+  }
   .do-more-section {
     flex-direction: column;
   }
@@ -742,29 +775,41 @@ margin: 40px 0;
   }
 }
 @media (max-width: 754px) {
-.bitcoin{
-  display: none;
+  .bitcoin {
+    display: none;
+  }
+  .visa-div {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+  .visa-img {
+    width: 15%;
+    margin-left: 0px;
+  }
+  .partner-div {
+    flex-direction: column;
+    width: 85%;
+    gap: 2em;
+  }
+  .footer-logo {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .payment-div {
+    padding: 0 20px;
+  }
 }
-.visa-div{
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center ;
-  gap: 3em;
-}
-.visa-img{
-  width: 15%;
-  margin-left: 0px;
-}
-.partner-div{
-  flex-direction: column;
-  width: 85%;
-  gap: 2em;
-}
-.footer-logo{
-  margin-top: 20px;
-  margin-left: 20px;
-}
-.payment-div{
-padding: 0 20px;
-}
+@media (max-width: 500px) {
+  .thirty {
+    font-size: 30px !important;
+  }
+  .header,
+  .main,
+  section {
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
 }
