@@ -9,7 +9,7 @@
   background: black;
   color: white;
   animation-name: loading;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 4s;
 }
