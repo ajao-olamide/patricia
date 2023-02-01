@@ -12,6 +12,11 @@
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 4s;
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 @keyframes loading {
   0% {
@@ -79,7 +84,6 @@ body {
   position: relative;
 }
 
-
 .checkbox-input-div {
   width: 100px;
   position: absolute;
@@ -128,6 +132,9 @@ body {
   display: flex;
   color: black;
   gap: 1.5em;
+}
+.google-play-div div {
+  font-size: 13px;
 }
 .google-play-div {
   width: 170px;
@@ -877,6 +884,10 @@ footer {
   }
 }
 @media (max-width: 500px) {
+  .google-play-div div {
+    font-size: 13px;
+  }
+
   .thirty {
     font-size: 30px !important;
   }
